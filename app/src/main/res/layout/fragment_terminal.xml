@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraintLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <ImageButton
+        android:id="@+id/enable_disable_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="560dp"
+        android:background="@drawable/enabled_btn"
+        android:contentDescription="@string/enable_disable_system"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_max="100dp"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintWidth_max="100dp" />
+
+    <ImageButton
+        android:id="@+id/lock_doors_btn"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:background="@drawable/lock_doors"
+        android:contentDescription="@string/lock_doors"
+        app:layout_constraintBottom_toBottomOf="@+id/unlock_trunk_btn"
+        app:layout_constraintEnd_toStartOf="@+id/unlock_trunk_btn"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/unlock_trunk_btn" />
+
+    <ImageButton
+        android:id="@+id/unlock_trunk_btn"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="60dp"
+        android:background="@drawable/unlock_trunk"
+        android:contentDescription="@string/unlock_trunk"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/unlock_doors_btn"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:background="@drawable/unlock_doors"
+        android:contentDescription="@string/unlock_doors"
+        app:layout_constraintBottom_toBottomOf="@+id/unlock_trunk_btn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/unlock_trunk_btn"
+        app:layout_constraintTop_toTopOf="@+id/unlock_trunk_btn" />
+
+    <ImageButton
+        android:id="@+id/start_stop_btn"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:background="@drawable/engine_start_stop"
+        android:contentDescription="@string/start_stop_button"
+        app:layout_constraintBottom_toTopOf="@+id/status_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.611" />
+
+    <TextView
+        android:id="@+id/status_text"
+        android:layout_width="match_parent"
+        android:layout_height="24dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.991" />
+
+    <ImageButton
+        android:id="@+id/acc_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:background="@drawable/acc_btn"
+        android:contentDescription="@string/toggle_accessories"
+        app:layout_constraintBottom_toBottomOf="@+id/ignition_btn"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/ignition_btn"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageButton
+        android:id="@+id/ignition_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="48dp"
+        android:background="@drawable/ign_btn"
+        android:contentDescription="@string/toggle_ignition"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.388"
+        app:srcCompat="@drawable/ign_btn" />
+
+    <TextView
+        android:id="@+id/enable_disable_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/system_enabled"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/enable_disable_btn" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

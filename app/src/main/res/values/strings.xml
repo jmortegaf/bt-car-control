@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Car Control</string>
+    <string name="devices">Bluetooth Devices</string>
+
+    <string name="bluetooth_permission_title">Bluetooth permission</string>
+    <string name="bluetooth_permission_grant">Bluetooth permission is required by this App. Please grant in next dialog.</string>
+    <string name="bluetooth_permission_denied">Bluetooth permission was permanently denied. You have to enable permission \"%s\" in App settings.</string>
+    <string name="start_stop_button">start/stop engine</string>
+    <string name="lock_doors">lock doors</string>
+    <string name="unlock_trunk">unlock trunk</string>
+    <string name="unlock_doors">unlock doors</string>
+    <string name="toggle_accessories">toggle accessories</string>
+    <string name="toggle_ignition">toggle ignition</string>
+    <string name="cmd_start_acc">d070aabd259b5f8</string>
+    <string name="enable_disable_system">Enable/Disable System</string>
+    <string name="system_disabled">System Disabled</string>
+    <string name="system_enabled">System Enabled</string>
+</resources>
